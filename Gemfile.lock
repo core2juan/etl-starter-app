@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:core2juan/etl_gem.git
+  revision: 9d86671b72f015a13e1913fe5e2dcec3eb2f046d
+  specs:
+    etl_gem (0.1.0)
+      activesupport
+      light-service (~> 0.12.0)
+
 PATH
   remote: lib/etl
   specs:
@@ -78,22 +86,21 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.5)
     crass (1.0.4)
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
-    i18n (1.1.1)
+    i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     libv8 (3.16.14.19)
-    light-service (0.11.0)
-      activesupport (>= 3.0)
+    light-service (0.12.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -148,6 +155,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    rb-readline (0.5.5)
     ref (2.0.0)
     regexp_parser (1.2.0)
     ruby_dep (1.5.0)
@@ -213,10 +221,12 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   etl!
+  etl_gem!
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 5.2.1)
+  rb-readline
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -229,4 +239,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
